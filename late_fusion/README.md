@@ -6,8 +6,9 @@ In clinical research, for example, separate models may process structured EHR da
 
 Late fusion allows each modality to be processed with a model suited to its characteristics and can facilitate the integration of heterogeneous data sources. However, it may capture fewer cross-modal interactions than approaches that combine information earlier in the modeling pipeline.
 
-## Standard Generic Workflow
+### Multimodal Foundation Model Workflow
 
+```mermaid
 flowchart TD
     A[Clinical Data Sources] --> B1[Structured EHR Data]
     A --> B2[Clinical Notes]
@@ -21,24 +22,12 @@ flowchart TD
     C2 --> D2[Projection Head]
     C3 --> D3[Projection Head]
 
-    D1 --> E[Multimodal Representations]
+    D1 --> E[Fusion of Representations]
     D2 --> E
     D3 --> E
 
-    E --> F[Fusion / Integration]
-    F --> G[Pretrained Foundation Model]
-    G --> H[Task-Specific Output Head]
-    H --> I[Clinical Prediction / Task Output]
-
-    classDef data fill:#E8F1FA,stroke:#3973AC,color:#111
-    classDef encoder fill:#E8F5E9,stroke:#4A8C53,color:#111
-    classDef projection fill:#FFF3D6,stroke:#C58A15,color:#111
-    classDef model fill:#F0E5FA,stroke:#8052A0,color:#111
-    classDef output fill:#FCE8E6,stroke:#C45B50,color:#111
-
-    class B1,B2,B3 data
-    class C1,C2,C3 encoder
-    class D1,D2,D3 projection
-    class F,G model
-    class H,I output
+    E --> F[Pretrained Foundation Model]
+    F --> G[Task-Specific Output Head]
+    G --> H[Clinical Prediction]
+```
 
