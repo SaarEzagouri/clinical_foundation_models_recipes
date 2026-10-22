@@ -1,4 +1,4 @@
-Codes in multimodal projector corrsponds to the diagram's *Foundation-Model-Specific Projector*.
+The current dir corrsponds to the diagram's *Foundation-Model-Specific Projector*.
 
 ```mermaid
 flowchart TD
