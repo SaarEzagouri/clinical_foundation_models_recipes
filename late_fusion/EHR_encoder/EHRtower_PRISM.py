@@ -9,6 +9,8 @@ class EHRTower(nn.Module):
     Uses a Transformer encoder to process feature tokens and outputs a fixed-size representation.
     The numerical fidelity of continuous features is preserved through learnable weights, while categorical features are embedded using dedicated embedding layers.
 
+    Input: features (torch.Tensor) -> Output: features representation (torch.Tensor). Requires an adapter for downstream fusion, soft tokenization.
+
     References:
         - Code was copied and edited from: https://github.com/hamzashafiq28/PRISM/blob/main/llava/model/multimodal_encoder/ehr_tower.py , Paper: https://arxiv.org/html/2610.13510v1, Model: PRISM
         - FT-Transformer: https://arxiv.org/pdf/2106.11959, repo: https://github.com/axrwl/fttransformer/tree/main
