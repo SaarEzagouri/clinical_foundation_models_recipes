@@ -1,5 +1,6 @@
 The current dir corrsponds to the diagram's *Foundation-Model-Specific Projector*.
 
+```mermaid
 flowchart TD
     A[Clinical Data Sources] --> B1[Structured EHR Data]
     A --> B2[Clinical Notes]
@@ -28,4 +29,4 @@ flowchart TD
     J --> K[Task-Specific Output Head]
     K --> L[Clinical Prediction]
 
-    style F fill:#fff2cc,stroke:#ff9900,stroke-width:4px,color:#000
+    style F fill:#fff2cc,stroke:#ff9900,stroke-width:4px,color:#000000
