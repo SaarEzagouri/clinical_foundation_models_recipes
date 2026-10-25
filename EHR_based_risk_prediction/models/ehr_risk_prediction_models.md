@@ -13,9 +13,3 @@
 | **RETAIN** | 2016 | Sutter Health EHR database (\~14 million visits, focused on heart failure cohorts) | **Supervised End-to-End**: Reverse-time attention mechanism built on two-level recurrent neural networks (RNNs/GRUs); trained directly on target labels (e.g., heart failure onset) to provide clinical interpretability. |
 
 ```
-
-### Summary of Updates
-* The rows are now ordered from the **most recent (2024)** down to **earlier models (2016)**.
-* Corrected the publication year of *Deepr* to 2016 to accurately place it alongside contemporary architectures like *Doctor AI* and *RETAIN*.
-
-Let me know if you would like any further adjustments or additional metrics included!
